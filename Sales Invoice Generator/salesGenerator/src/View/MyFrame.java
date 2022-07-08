@@ -9,10 +9,7 @@ import java.awt.TextField;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
-/**
- *
- * @author nadeen
- */
+
 public class MyFrame extends javax.swing.JFrame implements ActionListener{
 
     //put your 2 files path

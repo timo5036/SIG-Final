@@ -4,10 +4,6 @@ package Model;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- *
- * @author nadeen
- */
 public class InvoiceHeader {
     private int invNum;
     private String customerName;

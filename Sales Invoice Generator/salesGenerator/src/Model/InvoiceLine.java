@@ -1,10 +1,7 @@
 
 package Model;
 
-/**
- *
- * @author nadeen
- */
+
 public class InvoiceLine {
     private String itemName;
     private double itemPrice;
