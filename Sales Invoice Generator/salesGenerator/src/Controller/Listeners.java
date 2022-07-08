@@ -232,35 +232,35 @@ public class Listeners {
         }
     }
 
-//    public void cancelBtnActionPerformed(java.awt.event.ActionEvent evt) {
-//        // undo changes , read the file again
-//        lineModel = (DefaultTableModel) frame.getInvoiceItemsTable().getModel();
-//
-//        if (frame.getInvoiceItemsTable().getRowCount() == 0) {
-//            JOptionPane.showMessageDialog(null, "Empty Table, please load a txt file");
-//        } else {
-//            lineModel.setNumRows(0);
-//            BufferedReader br2 = null;
-//            try {
-//                File file2 = new File(path2);
-//                br2 = new BufferedReader(new FileReader(file2));
-//                Object[] tableLines = br2.lines().toArray();
-//                for (int i = 0; i < tableLines.length; i++) {
-//                    String line = tableLines[i].toString().trim();
-//                    String[] dataRow = line.split(",");
-//                    lineModel.addRow(dataRow);
-//                }
-//            } catch (IOException ex) {
-//                Logger.getLogger(MyFrame.class.getName()).log(Level.SEVERE, null, ex);
-//            } finally {
-//                try {
-//                    br2.close();
-//                } catch (IOException ex) {
-//                    Logger.getLogger(MyFrame.class.getName()).log(Level.SEVERE, null, ex);
-//                }
-//            }
-//        }
-//
-//    }
+    public void cancelBtnActionPerformed(java.awt.event.ActionEvent evt) {
+        // undo changes , read the file again
+        lineModel = (DefaultTableModel) frame.getInvoiceItemsTable().getModel();
+
+        if (frame.getInvoiceItemsTable().getRowCount() == 0) {
+            JOptionPane.showMessageDialog(null, "Empty Table, please load a txt file");
+        } else {
+            lineModel.setNumRows(0);
+            BufferedReader br2 = null;
+            try {
+                File file2 = new File(path2);
+                br2 = new BufferedReader(new FileReader(file2));
+                Object[] tableLines = br2.lines().toArray();
+                for (int i = 0; i < tableLines.length; i++) {
+                    String line = tableLines[i].toString().trim();
+                    String[] dataRow = line.split(",");
+                    lineModel.addRow(dataRow);
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(MyFrame.class.getName()).log(Level.SEVERE, null, ex);
+            } finally {
+                try {
+                    br2.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(MyFrame.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+
+    }
 
 }
